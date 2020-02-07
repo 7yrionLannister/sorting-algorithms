@@ -1,0 +1,6 @@
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\obj\Debug\model.csprojAssemblyReference.cache
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\bin\Debug\model.exe.config
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\bin\Debug\model.exe
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\bin\Debug\model.pdb
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\obj\Debug\model.exe
+D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\obj\Debug\model.pdb
