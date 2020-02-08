@@ -12,26 +12,21 @@ namespace model
     {
         public static void BubleSort<T>(List<T> items) where T : IComparable
         { 
-
+            
         }
 
         public static void InsertionSort<T>(List<T> items) where T : IComparable
         {
-            for (int i = 1; i < items.Count; i++) 
+            for (int i = 1; i < items.Count; ++i) 
             {
                 T it = items[i];
                 int j = i - 1;
-                T it2 = items[j];
-                while (j >= 0 && it.CompareTo(it2) < 0)
+                while (j >= 0 && it.CompareTo(items[j]) < 0)
                 {
-                    j--;
-                    it2 = j > -1 ? items[j] : it2;
+                    items[j + 1] = items[j];
+                    --j;
                 }
-                if(j > -1)
-                {
-                    items[i] = items[j];
-                    items[j] = it;
-                }
+                items[j+1] = it;
             }
         }
 
