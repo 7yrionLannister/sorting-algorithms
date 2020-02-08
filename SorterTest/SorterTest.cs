@@ -89,11 +89,11 @@ namespace SorterTest
         }
 
         [TestMethod]
-        public void BubleSortTestAleatoryOrder10toThePowerOf1()
+        public void BubbleSortTestAleatoryOrder10toThePowerOf1()
         {
             SetupStageAleatoryOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
 
@@ -105,14 +105,16 @@ namespace SorterTest
             Sorter.InsertionSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void BubbleSortTestAscendingOrder10toThePowerOf1()
         {
             SetupStageAscendingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf1()
         {
@@ -127,9 +129,10 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf1()
         {
@@ -140,13 +143,14 @@ namespace SorterTest
         }
 
         [TestMethod]
-        public void InsertionSortTestAleatoryOrder10toThePowerOf2()
+        public void BubbleSortTestAleatoryOrder10toThePowerOf2()
         {
             SetupStageAleatoryOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf2()
         {
@@ -161,9 +165,10 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf2()
         {
@@ -178,9 +183,10 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf2()
         {
@@ -195,9 +201,10 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf3()
         {
@@ -208,13 +215,14 @@ namespace SorterTest
         }
 
         [TestMethod]
-        public void InsertionSortTestAscendingOrder10toThePowerOf3()
+        public void BubbleSortTestAscendingOrder10toThePowerOf3()
         {
             SetupStageAscendingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf3()
         {
@@ -229,9 +237,10 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf3()
         {
@@ -246,9 +255,10 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf4()
         {
@@ -263,9 +273,10 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf4()
         {
@@ -280,9 +291,10 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            Sorter.BubleSort(ints);
+            Sorter.BubbleSort(ints);
             GeneralAssertions(original);
         }
+
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf4()
         {
