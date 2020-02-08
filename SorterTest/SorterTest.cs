@@ -89,9 +89,12 @@ namespace SorterTest
         }
 
         [TestMethod]
-        public void BubleSortTest()
+        public void BubleSortTestAleatoryOrder10toThePowerOf1()
         {
-            //Assert.AreEqual(expected, actual, errorMargin, "info msg");
+            SetupStageAleatoryOrder10toThePowerOf1();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
@@ -102,7 +105,14 @@ namespace SorterTest
             Sorter.InsertionSort(ints);
             GeneralAssertions(original);
         }
-
+        [TestMethod]
+        public void BubbleSortTestAscendingOrder10toThePowerOf1()
+        {
+            SetupStageAscendingOrder10toThePowerOf1();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf1()
         {
@@ -112,6 +122,14 @@ namespace SorterTest
             GeneralAssertions(original);
         }
 
+        [TestMethod]
+        public void BubbleSortTestDecreasingOrder10toThePowerOf1()
+        {
+            SetupStageDecreasingOrder10toThePowerOf1();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf1()
         {
@@ -126,10 +144,26 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
+        [TestMethod]
+        public void InsertionSortTestAleatoryOrder10toThePowerOf2()
+        {
+            SetupStageAleatoryOrder10toThePowerOf2();
+            List<int> original = new List<int>(ints.ToArray());
             Sorter.InsertionSort(ints);
             GeneralAssertions(original);
         }
 
+        [TestMethod]
+        public void BubbleSortTestAscendingOrder10toThePowerOf2()
+        {
+            SetupStageAscendingOrder10toThePowerOf2();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf2()
         {
@@ -140,6 +174,14 @@ namespace SorterTest
         }
 
         [TestMethod]
+        public void BubbleSortTestDecreasingOrder10toThePowerOf2()
+        {
+            SetupStageDecreasingOrder10toThePowerOf2();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
+        [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf2()
         {
             SetupStageDecreasingOrder10toThePowerOf2();
@@ -148,6 +190,14 @@ namespace SorterTest
             GeneralAssertions(original);
         }
 
+        [TestMethod]
+        public void BubbleSortTestAleatoryOrder10toThePowerOf3()
+        {
+            SetupStageAleatoryOrder10toThePowerOf3();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf3()
         {
@@ -162,10 +212,26 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
+        [TestMethod]
+        public void InsertionSortTestAscendingOrder10toThePowerOf3()
+        {
+            SetupStageAscendingOrder10toThePowerOf3();
+            List<int> original = new List<int>(ints.ToArray());
             Sorter.InsertionSort(ints);
             GeneralAssertions(original);
         }
 
+         [TestMethod]
+        public void BubbleSortTestDecreasingOrder10toThePowerOf3()
+        {
+            SetupStageDecreasingOrder10toThePowerOf3();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf3()
         {
@@ -176,6 +242,14 @@ namespace SorterTest
         }
 
         [TestMethod]
+        public void BubbleSortTestAleatoryOrder10toThePowerOf4()
+        {
+            SetupStageAleatoryOrder10toThePowerOf4();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
+        [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf4()
         {
             SetupStageAleatoryOrder10toThePowerOf4();
@@ -185,6 +259,14 @@ namespace SorterTest
         }
 
         [TestMethod]
+        public void BubbleSortTestAscendingOrder10toThePowerOf4()
+        {
+            SetupStageAscendingOrder10toThePowerOf4();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
+        [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf4()
         {
             SetupStageAscendingOrder10toThePowerOf4();
@@ -193,6 +275,14 @@ namespace SorterTest
             GeneralAssertions(original);
         }
 
+         [TestMethod]
+        public void BubbleSortTestDecreasingOrder10toThePowerOf4()
+        {
+            SetupStageDecreasingOrder10toThePowerOf4();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.BubleSort(ints);
+            GeneralAssertions(original);
+        }
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf4()
         {
