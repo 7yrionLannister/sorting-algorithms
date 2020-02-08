@@ -13,6 +13,15 @@ namespace model
         public static void BubleSort<T>(List<T> items) where T : IComparable
         { 
             
+            for (int i = 0; i < items.Count; i++) {
+                for (int j = 0; j < items.Count - 1; j++) {
+                     if (arr[j] > items[j + 1]) {
+                        int temp = items[j + 1];
+                        items[j + 1] = items[j];
+                        items[j] = temp;
+                     }
+                }
+            }
         }
 
         public static void InsertionSort<T>(List<T> items) where T : IComparable
