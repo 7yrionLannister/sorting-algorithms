@@ -98,90 +98,112 @@ namespace SorterTest
         public void InsertionSortTestAleatoryOrder10toThePowerOf1()
         {
             SetupStageAleatoryOrder10toThePowerOf1();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf1()
         {
             SetupStageAscendingOrder10toThePowerOf1();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf1()
         {
             SetupStageDecreasingOrder10toThePowerOf1();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf2()
         {
             SetupStageAleatoryOrder10toThePowerOf2();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf2()
         {
             SetupStageAscendingOrder10toThePowerOf2();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf2()
         {
             SetupStageDecreasingOrder10toThePowerOf2();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf3()
         {
             SetupStageAleatoryOrder10toThePowerOf3();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf3()
         {
             SetupStageAscendingOrder10toThePowerOf3();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf3()
         {
             SetupStageDecreasingOrder10toThePowerOf3();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAleatoryOrder10toThePowerOf4()
         {
             SetupStageAleatoryOrder10toThePowerOf4();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestAscendingOrder10toThePowerOf4()
         {
             SetupStageAscendingOrder10toThePowerOf4();
-            GeneralAssertions();
+            List<int> original = new List<int>(ints.ToArray());
+            Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
         }
 
         [TestMethod]
         public void InsertionSortTestDecreasingOrder10toThePowerOf4()
         {
             SetupStageDecreasingOrder10toThePowerOf4();
-            GeneralAssertions();
-        }
-
-        private void GeneralAssertions()
-        {
             List<int> original = new List<int>(ints.ToArray());
             Sorter.InsertionSort(ints);
+            GeneralAssertions(original);
+        }
+
+        private void GeneralAssertions(List<int> original)
+        {
             for (int i = 1; i < ints.Count; i++)
             { //verify the ascending order
                 Assert.IsTrue(ints[i] >= ints[i - 1], "The list is not in ascending order");
