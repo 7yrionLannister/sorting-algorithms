@@ -4,3 +4,9 @@ D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabaj
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\bin\Debug\model.pdb
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\obj\Debug\model.exe
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\model\obj\Debug\model.pdb
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\bin\Debug\model.exe.config
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\bin\Debug\model.exe
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\bin\Debug\model.pdb
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\obj\Debug\model.csprojAssemblyReference.cache
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\obj\Debug\model.exe
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\model\obj\Debug\model.pdb

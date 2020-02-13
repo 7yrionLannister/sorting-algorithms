@@ -17,3 +17,22 @@ D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabaj
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.csproj.CopyComplete
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.dll
 D:\OneDrive\OneDrive - Universidad Icesi\Icesi\Quinto semestre\integrador\Trabajos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.pdb
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\SorterTest.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\SorterTest.pdb
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\model.exe
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\model.pdb
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\model.exe.config
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.csprojAssemblyReference.cache
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.csproj.CopyComplete
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.dll
+C:\Users\Luis Felipe\Source\Repos\sorting-algorithms\SorterTest\obj\Debug\SorterTest.pdb

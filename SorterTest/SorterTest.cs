@@ -326,6 +326,15 @@ namespace SorterTest
             }
         }
 
+        public static DateTime reference = DateTime.UtcNow;
+
+        public static long CurrentTimeMillis() 
+        {
+
+            return (long)(DateTime.UtcNow - reference).TotalSeconds;    
+
+        }
+
         /*[TestMethod]
         [ExpectedException(typeof(NullReferenceException))] //can be any kind of Exception
         public void ExampleHandlingAnException()
