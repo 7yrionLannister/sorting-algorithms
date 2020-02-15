@@ -1,6 +1,7 @@
 ﻿using model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace ui
 {
     public class SorterMain
     {
+        public const string PATH = "..\\..\\..\\REPORT.csv";
         private static Random r = new Random(); //used to generate the big lists (N >= 10^2)
         private static List<int> ints;
 
@@ -98,165 +100,188 @@ namespace ui
 
         public static void Main(string[] args)
         {
-            SetupStageAleatoryOrder10toThePowerOf1();
-            long t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
+            StreamWriter sw = new StreamWriter(PATH);
+            sw.WriteLine("#HEADERS SPECIFICATIONS");
+            sw.WriteLine("#first character: \"b\" is for BubbleSort and \"i\" is for InsertionSort");
+            sw.WriteLine("#second characer: \"a\" is for aleatory order, \"i\" is for increasing order and \"d\" is for decreasing order");
+            sw.WriteLine("#third character: \"1\", \"2\", \"3\" and \"4\" refer to the input size (10 ^ third character)");
+            sw.WriteLine("ba1,ia1,bi1,ii1,bd1,id1,ba2,ia2,bi2,ii2,bd2,id2,ba3,ia3,bi3,ii3,bd3,id3,ba4,ia4,bi4,ii4,bd4,id4");
 
-            SetupStageAleatoryOrder10toThePowerOf1();
+            for (int i = 0; i < 1000; i++)
+            { 
+                String repetition = "";
 
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf1();
+                long t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                long t2 = CurrentTimeMillis();
+                long duration = t2 - t1;
+                repetition += duration+",";
 
-            SetupStageAscendingOrder10toThePowerOf1();
+                SetupStageAleatoryOrder10toThePowerOf1();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf1();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf1();
- 
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf1();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf1();
- 
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf1();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf1();
-      
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf1();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf2();
-          
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf2();
-       
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf2();
- 
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf2();
-      
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf2();
-  
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf2();
+                SetupStageDecreasingOrder10toThePowerOf2();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf3();
-         
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf3();
-         
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf3();
-       
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf3();
+                SetupStageDecreasingOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf3();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf3();
-   
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAleatoryOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageDecreasingOrder10toThePowerOf3();
+                SetupStageAleatoryOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf4();
- 
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageAscendingOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAleatoryOrder10toThePowerOf4();
-   
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.BubbleSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration + ",";
 
-            SetupStageAscendingOrder10toThePowerOf4();
-      
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                SetupStageDecreasingOrder10toThePowerOf4();
+                t1 = CurrentTimeMillis();
+                Sorter.InsertionSort(ints);
+                t2 = CurrentTimeMillis();
+                duration = t2 - t1;
+                repetition += duration;
 
-            SetupStageAscendingOrder10toThePowerOf4();
-   
-            t1 = CurrentTimeMillis();
-            Sorter.InsertionSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
-
-            SetupStageDecreasingOrder10toThePowerOf4();
-         
-            t1 = CurrentTimeMillis();
-            Sorter.BubbleSort(ints);
-            t2 = CurrentTimeMillis();
-            duration = t2 - t1;
+                sw.WriteLine(repetition);
+            }
+            sw.Close();
         }
     }
 }
