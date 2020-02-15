@@ -10,12 +10,7 @@ namespace SorterTest
     {
         private static Random r = new Random(); //used to generate the big lists (N >= 10^2)
         private List<int> ints;
-        public static DateTime reference = DateTime.UtcNow; //reference moment for time measurament
-
-        public static long CurrentTimeMillis()
-        {
-            return (long)(DateTime.UtcNow - reference).TotalMilliseconds;
-        }
+        
 
         private void SetupStageAleatoryOrder10toThePowerOf1()
         {
@@ -99,10 +94,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -111,10 +103,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -123,10 +112,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -135,10 +121,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -147,10 +130,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -159,10 +139,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf1();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -171,10 +148,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -183,10 +157,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -195,10 +166,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -207,10 +175,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -219,10 +184,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -231,10 +193,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf2();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -243,10 +202,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -255,10 +211,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -267,10 +220,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -279,10 +229,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -291,10 +238,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -303,10 +247,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf3();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -315,10 +256,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -327,10 +265,7 @@ namespace SorterTest
         {
             SetupStageAleatoryOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -339,10 +274,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -351,10 +283,7 @@ namespace SorterTest
         {
             SetupStageAscendingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -363,10 +292,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.BubbleSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
@@ -375,10 +301,7 @@ namespace SorterTest
         {
             SetupStageDecreasingOrder10toThePowerOf4();
             List<int> original = new List<int>(ints.ToArray());
-            long t1 = CurrentTimeMillis();
             Sorter.InsertionSort(ints);
-            long t2 = CurrentTimeMillis();
-            long duration = t2 - t1;
             GeneralAssertions(original);
         }
 
