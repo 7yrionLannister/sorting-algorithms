@@ -7,6 +7,3 @@ Project built with the purpose of learning about unitary tests in C# and .NET
 + [Luis Felipe Sanchez Vega](https://github.com/SanchezFelipe01 "Felipe Sanchez")
 
 [![time tracker](https://wakatime.com/badge/github/7yrionLannister/sorting-algorithms.svg)](https://wakatime.com/badge/github/7yrionLannister/sorting-algorithms)
-
-[![time tracker](https://wakatime.com/@SanchezFelipe01/projects/jtyrbaefag?start=2020-02-10&end=2020-02-16
-(https://wakatime.com/@SanchezFelipe01/projects/jtyrbaefag?start=2020-02-10&end=2020-02-16)
