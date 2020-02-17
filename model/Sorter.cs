@@ -5,9 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace model
-{
+{   /**
+     *This class contains two sorting methods with equal temporal complexity
+     */
     public class Sorter
     {
+        // -----------------------------------------------------------------
+        // Methods for sort List
+        // -----------------------------------------------------------------
+        /**
+	    * This function uses an bubble sort algorithm to sort the list of values.
+	    * @param items  A list of the values that will be sorted
+	    */
         public static void BubbleSort<T>(List<T> items) where T : IComparable
         {
 
@@ -25,6 +34,10 @@ namespace model
             }
         }
 
+        /**
+	    * This function uses an insert sort algorithm to sort the list of values.
+	    * @param items  A list of the values that will be sorted
+	    */
         public static void InsertionSort<T>(List<T> items) where T : IComparable
         {
             for (int i = 1; i < items.Count; ++i)
