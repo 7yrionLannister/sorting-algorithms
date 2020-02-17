@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\model\model.csproj">
-      <Project>{b7eff84b-1efe-41ec-8668-5f76c80b6623}</Project>
+      <Project>{f0c5b6f8-98dd-4a37-8cd4-67f6a59c5027}</Project>
       <Name>model</Name>
     </ProjectReference>
   </ItemGroup>
