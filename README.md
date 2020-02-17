@@ -6,4 +6,4 @@ Project built with the purpose of learning about unitary tests in C# and .NET
 + [Daniel Alejandro Fernández Robles](https://github.com/7yrionLannister "Daniel Fernández")
 + [Luis Felipe Sanchez Vega](https://github.com/SanchezFelipe01 "Felipe Sanchez")
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
+[![time tracker](https://wakatime.com/badge/github/7yrionLannister/sorting-algorithms.svg)](https://wakatime.com/badge/github/7yrionLannister/sorting-algorithms)
