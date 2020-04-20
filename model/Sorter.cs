@@ -22,7 +22,7 @@ namespace model
 
             for (int i = 0; i < items.Count; i++)
             {
-                for (int j = 0; j < items.Count - 1; j++)
+                for (int j = 0; j < items.Count - i - 1; j++)
                 {
                     if (items[j].CompareTo(items[j + 1]) > 0)
                     {
